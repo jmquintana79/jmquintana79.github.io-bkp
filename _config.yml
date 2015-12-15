@@ -2,17 +2,6 @@
 # Site settings
 
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : http://jmquintana79.github.io
-
-
 # NB! Set your site's url, otherwise stuff will break :)
 
 url: "https://jmquintana79.github.io"
@@ -24,7 +13,8 @@ url: "https://jmquintana79.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+#baseurl: /personal-jekyll-theme
+baseurl: /
 
 # Google tracking id to track your visitors
 
@@ -71,7 +61,7 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/profile-juan.jpg"
 
 ################
 # Web app mode #
