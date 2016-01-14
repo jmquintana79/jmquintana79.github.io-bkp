@@ -107,16 +107,43 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2006 - August 2013"
-    description: "Started coding"
+  - image: "/img/timeline/logo-japan.png"
+    date: "MAY 2015 - Currently"
+    description: "Analyst and Developer <br><a href='http://n-kishou.com/corp/' target=\'_blank\'>Japan Meteorological Corporation</a> <br>Python, Datamining, Modelling, Analysis <br><small><i>Osaka, Japan</i></small>"
+  - image: "/img/timeline/logo-ereda.png"
+    date: "OCT 2012 - APR 2015"
+    description: "Meteorological Technician & Senior Developer <br><a href='http://www.ereda.com/en/' target=\'_blank\'>EREDA, Renewable Energy Solutions</a> <br>C++, Python, R and Matlab, Data Analysis, Dynamical Forecast, Django Web Application <br><small><i>Madrid, Spain</i></small>"
+  - image: "/img/timeline/logo-fic.jpg"
+    date: "MAY 2010 - AUG 2012"
+    description: "Meteorological Technician & Software Developer <br><a href='http://www.ficlima.org/' target=\'_blank\'>Foundation for Research of Climate Change (FIC)</a> <br>Fortran and R, Seasonal Forecast, Statistical Downscaling <br><small><i>Madrid, Spain</i></small>"
+  - image: "/img/timeline/logo-aemet.png"
+    date: "JAN 2010 - APR 2010"
+    description: "Aeronautic Meteorological Observer <br><a href='http://www.aemet.es/en/portada' target=\'_blank\'>Meteorological Agency</a> <br><small><i>Malaga, Spain</i></small>"
+  - image: "/img/timeline/logo-aemet.png"
+    date: "MAY 2009 - JUN 2009"
+    description: "Aeronautic Meteorological Observer Course <br><a href='http://www.aemet.es/en/portada' target=\'_blank\'>Meteorological Agency</a> <br><small><i>Madrid, Spain</i></small>"
+  - image: "/img/timeline/logo-uned.jpg"
+    date: "JAN 2009 - DEC 2009"
+    description: "College Course <br>Satellite Remote Sensing <br><a href='http://portal.uned.es/portal/page?_pageid=93,24305391&_dad=portal&_schema=PORTAL' target=\'_blank\'>Spanish Distance Learning College</a>"
+  - image: "/img/timeline/logo-aemet.png"
+    date: "NOV 2007 - DEC 2009"
+    description: "Fellow Graduate <br><a href='http://www.aemet.es/en/portada' target=\'_blank\'>Meteorological Agency</a> <br>Fortran, Seasonal Forecast, Dynamical Downscaling, Project with <a href='http://www.ecmwf.int/' target=\'_blank\'>ECMWF</a> <br><small><i>Madrid, Spain</i></small>"
+  - image: "/img/timeline/logo-coritel.jpeg"
+    date: "NOV 2006 - OCT 2007"
+    description: "Junior Programmer <br><a href='https://www.accenture.com/' target=\'_blank\'>Coritel SA (Accenture)</a> <br><a href='http://www-03.ibm.com/software/products/en/ibmnotes' target=\'_blank\'>Lotus Notes</a> <br><small><i>Madrid, Spain</i></small>"
+  - image: "/img/timeline/logo-coritel.jpeg"
+    date: "SEP 2006 - OCT 2006"
+    description: "Training Course <br><a href='https://www.accenture.com/' target=\'_blank\'>Coritel SA (Accenture)</a> <br><small><i>Madrid, Spain</i></small>"
+  - image: "/img/timeline/logo-cplusplus.png"
+    date: "2005"
+    description: 'Course <br>"Programming languages" <br>C, C++ and Visual C++ <br><small><i>Guadalajara, Spain</i></small>'
+  - image: "/img/timeline/logo-uam.jpg"
+    date: "SEP 1999 - DEC 2004"
+    description: "Degree in Physics <br><a href='http://www.uam.es/ss/Satellite/Ciencias/en/1242655567919/contenidoFinal/Fisica.htm' target=\'_blank\'>University of Madrid</a> <br><small><i>Madrid, Spain</i></small>"
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+timeline-img: "/img/timeline/logo_first-sleeping.jpg"
 
 ###########
 # Contact #
@@ -129,12 +156,14 @@ email: "juan.armaguedon@gmail.com"
 ##################
 
 social:
-  - title: "facebook"
-    url: "http://facebook.com/juan.armagedon"
-  - title: "twitter"
-    url: "https://twitter.com/jmquintana79"
+  - title: "linkedin"
+    url: "https://jp.linkedin.com/in/juan-quintana-ab884428"
   - title: "github"
     url: "https://github.com/jmquintana79"
+  - title: "twitter"
+    url: "https://twitter.com/jmquintana79"
+  - title: "facebook"
+    url: "http://facebook.com/juan.armagedon"
   - title: "rss"
     url: "/feed.xml"
 
