@@ -29,7 +29,7 @@
   <meta name="author" content="Juan Quintana">
   <meta name="keywords" content="">
   <link rel="canonical" href="/tech/2015/06/27/welcome.html">
-  <title>{ Juan Quintana }  | Welcome to { Personal } Jekyll Theme!</title>
+  <title>{ Juan Quintana }  | Welcome to the tutorial of { Personal } Jekyll Theme!</title>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -180,7 +180,7 @@
 <!-- Swipe Instructions End -->
 
 
-          <h1><strong>Welcome to { Personal } Jekyll Theme!</strong></h1>
+          <h1><strong>Welcome to the tutorial of { Personal } Jekyll Theme!</strong></h1>
           <h4><strong>27 Jun 2015</strong>
             <small> . tech . <a href="/tech/2015/06/27/welcome.html#disqus_thread">Comments</a>
             
@@ -189,12 +189,378 @@
             </small>
           </h4>
 
-          <p>Click the view more posts link bellow, to see the currently available post-tutorials to help you get your { Personal } website up and running quicker!</p>
+          <p>This theme was developed by  <a href="https://panossakkos.github.io/" target="\_blank">Panos Sakkos</a> using  the framework <a href="http://jekyllbootstrap.com/" target="\_blank">Jekyll Bootstrap</a>. Later it was modified and customized according to my needs.</p>
+
+<p>For this reason I want to thanks to Panos for his great job making this awesome profile website. It is very easy to operate and very easy to customize.</p>
+
+<p>On the other hand, I’d like include a manual, also written by Panos, as my first post about how use this kind of website.</p>
 
 <p>Note that every time you update the site configuration (_config.yml), you will need
 to cancel the serving (<em>Ctr + C</em>) and serve the website again.</p>
 
-<p>Any contributions, feedback or issues to the <a href="https://github.com/PanosSakkos/personal-jekyll-theme" target="\_blank">repo</a> are more than welcome!</p>
+<h2 id="br-initial-setup"><br />Initial setup</h2>
+
+<p>All features of { Personal } are controlled by setting values to variables that are defined in the
+_config.yml file. Let’s start with the initial variables that you have to set before
+serving your { Personal } website for the first time.</p>
+
+<h3 id="essential-variables">Essential variables</h3>
+
+<pre><code data-trim="" class="yaml">
+# NB! Set your site's url, otherwise stuff will break :)
+
+url: "https://panossakkos.github.io"
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (https://yourusername.github.io/repository-name)
+# and NOT your user repository (https://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
+
+baseurl: /personal-jekyll-theme
+</code></pre>
+
+<p>The url and baseurl variables are essential, because they are used <em>everywhere</em> where an anchor is defined!</p>
+
+<h3 id="https">HTTPS</h3>
+
+<p>By default { Personal } will enforce https by javascript redirection.
+HTTPS is important because it encrypts the data sent between the client and the server.
+If you are hosting on GitHub Pages then it will just work, because your website
+will be piggybacking GitHub’s certificate.
+If you are hosting your website in a server that doesn’t have a certificate and
+you don’t want to issue one, then you can disable this feature by setting the following
+variable to False:</p>
+
+<pre><code data-trim="" class="yaml">
+force-https: True
+</code></pre>
+
+<h3 id="html-head">HTML Head</h3>
+
+<pre><code data-trim="" class="yaml">
+lang: "en"
+author: "John Smith"
+title: "{ John Smith }"
+description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+keywords: "smith, jones, personal, jekyll, theme"
+favicon: "/img/favicon.ico"
+404-img: "/img/labtocat.png"
+</code></pre>
+
+<p>The values that you set, will be placed in the head section of every generated HTML page.</p>
+
+<h3 id="google-analytics">Google Analytics</h3>
+
+<p>The Google tracking code will be placed in every generated page.
+If you don’t want Google analytics tracking your website’s traffic, set the google-tracking-id to an empty string.</p>
+
+<pre><code data-trim="" class="yaml">
+google-tracking-id: "UA-35880426-4"
+</code></pre>
+
+<h3 id="serving--personal-">Serving { Personal }</h3>
+
+<p>Install the required dependencies:</p>
+
+<pre><code data-trim="" class="bash">
+gem install jekyll jekyll-paginate jemoji html-proofer
+</code></pre>
+
+<p>Serve the jekyll website:</p>
+
+<pre><code data-trim="" class="bash">
+./scripts/serve-production
+</code></pre>
+
+<p>That’s it!</p>
+
+<p>Visit <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a> and you are ready to start hacking around your { Personal } website!</p>
+
+<h2 id="br--writting-post"><br /> Writting post</h2>
+
+<h3 id="creating-a-new-post">Creating a new post</h3>
+
+<p>Run the ./scripts/newpost script with the file name of the post as an argument:</p>
+
+<pre><code data-trim="" class="bash">
+cd &lt;your { Personal } repo&gt;
+./scripts/newpost hello-world
+</code></pre>
+
+<p>A a new post template with name YYYY-MM-DD-hello-world.md will be created under ./_posts, with the current date.</p>
+
+<p>In the created post, just replace the Title, Category and tags and you can
+start writing your post in markdown right bellow the end of the post header.</p>
+
+<p>Every file with the format <i>YYYY-MM-DD-post-title.md</i> will be processed as a
+post, with publication date <i>YYYY-MM-DD</i>.</p>
+
+<p>The content starts with:</p>
+
+<pre><code data-trim="" class="yaml">
+---
+layout: post
+section-type: post
+title: Title
+category: Category
+tags: [ 'tag1', 'tag2' ]
+---
+</code></pre>
+
+<p>The <em>layout</em> and <em>section-type</em> variables are used by the theme and you shouldn’t remove them.</p>
+
+<h3 id="hashtags">Hashtags</h3>
+
+<p>Jekyll generates a static pages.
+As a result we have to create the tag pages before building and publishing the site.
+In order to generate the tag pages, simply run the <em>generate-tags</em> script from the repo’s root directory:</p>
+
+<pre><code data-trim="" class="bash">
+./scripts/generate-tags
+</code></pre>
+
+<p>The script will parse all your posts, and generate the tag pages for the newly added tags.</p>
+
+<p><small>If you are not using GitHub Pages, you can automate the execution of this script during build time.</small></p>
+
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+
+<p>If you want to demonstrate source code in your posts, syntax highlighting is provided.
+If you want to see how to render your code with the highlight, simply check the source
+code of this tutorial post <img class="emoji" title=":smile:" alt=":smile:" src="https://assets.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle" /></p>
+
+<pre><code data-trim="" class="c">
+int main()
+{
+  printf("Hello, world of syntax highlighting!");
+  return 0;
+}
+</code></pre>
+
+<p><small>If you don’t need syntax highlight in your website you can disable it by setting the syntax-highlight variable to False</small></p>
+
+<h3 id="emoji-support">Emoji support</h3>
+
+<p>You can add emojis to your posts by simply typing their <a href="http://www.emoji-cheat-sheet.com/">emoji code</a> <img class="emoji" title=":wink:" alt=":wink:" src="https://assets.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20" align="absmiddle" /></p>
+
+<h2 id="br--setting-up-the-blog"><br /> Setting up the Blog</h2>
+
+<p>A website is truly personal if it hosts your blog as well, this place of the internet
+where you can place your thoughts about anything!</p>
+
+<h3 id="latest-post-preview-in-index-page">Latest post preview in Index page</h3>
+
+<p>First of all, you get a preview of the latest post in the index, in order to attract the visitor to visit your blog.
+The size of this preview is defined by:</p>
+
+<pre><code data-trim="" class="yaml">
+post-preview-words: 96
+</code></pre>
+
+<p>Feel free to experiment with different sizes, and pick the best for you <img class="emoji" title=":smile:" alt=":smile:" src="https://assets.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle" /></p>
+
+<h3 id="archive">Archive</h3>
+
+<p>A blog is expected to host many posts, so you will need an archive with pagination,
+which in a nutshell it’s a grouping of your posts in pages, in reverse chronological
+order. You can define the number of posts that are displayed per page by changing:</p>
+
+<pre><code data-trim="" class="yaml">
+paginate: 5
+</code></pre>
+
+<h3 id="share-buttons">Share buttons</h3>
+
+<p>Many share buttons are available and can be enabled or disabled by setting the following:</p>
+
+<pre><code data-trim="" class="yaml">
+email-share: True
+fb-share: True
+twitter-share: True
+linkedin-share: True
+reddit-share: True
+google-plus-share: True
+tumblr-share: True
+pinterest-share: True
+pocket-share: True
+vkontakte-share: True
+</code></pre>
+
+<h3 id="comments">Comments</h3>
+
+<p>You can enable <a href="http://www.disqus.com" target="\_blank">Disqus</a> comments by just setting your Disqus username here:</p>
+
+<pre><code data-trim="" class="yaml">
+disqus-shortname: "Your Disqus username"
+</code></pre>
+
+<h3 id="rss-feed">RSS feed</h3>
+
+<p>The RSS feed is automatically generated and placed in /feed.xml.</p>
+
+<h3 id="sitemap">Sitemap</h3>
+
+<p>The Sitemap is automatically generated and placed in /sitemap.xml</p>
+
+<h2 id="br--modifying-the-header"><br /> Modifying the Header</h2>
+
+<p>The intro part of the index page (Header) is consisted of four elements:</p>
+
+<ol>
+  <li>A black favicon</li>
+  <li>Background image</li>
+  <li>Welcome text</li>
+  <li>Your image</li>
+</ol>
+
+<h3 id="black-favicon">Black favicon</h3>
+
+<p>The black favicon is an image on the left of the navigation bar.
+Preferably it should be a black and white version of your favicon.</p>
+
+<pre><code data-trim="" class="yaml">
+black-favicon: "/img/black-lab-glass.ico"
+</code></pre>
+
+<h3 id="background-image">Background image</h3>
+
+<p>In order to set the background, set the path to following variable:</p>
+
+<pre><code data-trim="" class="yaml">
+background-img: "../img/intro-bg.jpg"
+</code></pre>
+
+<p><small>NB! Keep the .. in the beginning of the background image path</small></p>
+
+<h3 id="welcome-text">Welcome text</h3>
+
+<p>The welcome text is controlled by the following (self-explanatory) variables:</p>
+
+<pre><code data-trim="" class="yaml">
+dynamic-typing: True
+shuffle: True # Shuffle the lines.
+loop: True
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 10 # Default 10
+start-delay: 200 # Default 200
+delete-delay: 5000 # Default 5000
+lines: # You can add HTML Tags in the Text
+  - text: "The lower you fall, the higher you'll fly."
+  - text: "Where’s your will to be weird?"
+</code></pre>
+
+<p><small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for the dynamic typing feature!</small></p>
+
+<h3 id="your-image">Your image</h3>
+
+<p>You can set your image from the following variable:</p>
+
+<pre><code data-trim="" class="yaml">
+me-img: "/img/jetpacktocat.png"
+</code></pre>
+
+<p>All set!</p>
+
+<h2 id="br--web-app-mode"><br /> Web app mode</h2>
+
+<p>You can make your website behave like a native web app in iOS and Android devices
+by providing links for the icons for each resolution:</p>
+
+<pre><code data-trim="" class="yaml">
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
+</code></pre>
+
+<p><small>If you want to disable this feature, simply set the web-app-mode variable to False</small></p>
+
+<p>This is how your website will look when added to the homescreen:</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg" alt="iOS" /></p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg" alt="Android" /></p>
+
+<p>And when the user opens it (note that it renders in fullscreen):</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/web-app.jpg" alt="Web App" /></p>
+
+<h2 id="br--adding-a-life-event-in-the-timeline"><br /> Adding a life event in the Timeline</h2>
+
+<p>One of the coolest features of { Personal } is that enables you to tell your life’s story in
+the form of a timeline of photos, dates and text descriptions.</p>
+
+<p>The Timeline is controlled by the following variables:</p>
+
+<pre><code data-trim="" class="yaml">
+events:
+  - image: "/img/timeline/spidertocat.png"
+    date: "September 2013 - Today"
+    description: "Saving the neighborhood!"
+  - image: "/img/timeline/baracktocat.jpg"
+    date: "September 2007 - August 2013"
+    description: "Started coding"
+
+# First image of the Timeline
+
+timeline-img: "/img/timeline/default.png"
+</code></pre>
+
+<p>For each event of your life, add a tuple of image, date and description to the events,
+and the timeline will be automatically generated!</p>
+
+<p>The timeline-img path variable is the image that you want to show up in the beginning of your Timeline, be creative!</p>
+
+<p><small>Square images are recommended 😉</small></p>
+
+<h2 id="br--modifying-the-social-buttons"><br /> Modifying the social buttons</h2>
+
+<p>Social buttons (rendered above the footer) are great for having a small hub with all your social footprint.</p>
+
+<p>You can edit them with the following variables:</p>
+
+<pre><code data-trim="" class="yaml">
+social:
+  - title: "facebook"
+    url: "https://facebook.com/"
+  - title: "twitter"
+    url: "https://twitter.com/"
+  - title: "github"
+    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+  - title: "bitcoin"
+    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+  - title: "rss"
+    url: "/feed.xml"
+</code></pre>
+
+<p>The title selects the desired <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a>
+icon and it shouldn’t include the “fa-“ prefix.</p>
+
+<h2 id="br--modifying-the-contact"><br /> Modifying the Contact</h2>
+
+<p>The contact part of the index page is consisted of two elements:</p>
+
+<ol>
+  <li>Text</li>
+  <li>Your email address</li>
+</ol>
+
+<p>You can modify the Contact text from the /contact.html file and set the email in the site config:</p>
+
+<pre><code data-trim="" class="yaml">
+email: "your@email.here"
+</code></pre>
+
+<p>Don’t be afraid of email harvesting, write your email properly and the page will perform javascript obfuscation.</p>
+
 
 
           
@@ -203,7 +569,7 @@ to cancel the serving (<em>Ctr + C</em>) and serve the website again.</p>
   <ul class="rrssb-buttons clearfix">
     
       <li class="rrssb-email">
-        <a href="mailto:?subject=Welcome to { Personal } Jekyll Theme!&body=https://jmquintana79.github.io/tech/2015/06/27/welcome.html" data-proofer-ignore>
+        <a href="mailto:?subject=Welcome to the tutorial of { Personal } Jekyll Theme!&body=https://jmquintana79.github.io/tech/2015/06/27/welcome.html" data-proofer-ignore>
           <span class="rrssb-icon">
             <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
               <path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"
@@ -216,7 +582,7 @@ to cancel the serving (<em>Ctr + C</em>) and serve the website again.</p>
     
     
       <li class="rrssb-facebook">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://jmquintana79.github.io/tech/2015/06/27/welcome.html&title=Welcome to { Personal } Jekyll Theme!" class="popup">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://jmquintana79.github.io/tech/2015/06/27/welcome.html&title=Welcome to the tutorial of { Personal } Jekyll Theme!" class="popup">
           <span class="rrssb-icon">
             <svg xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="29" height="29" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
               class="cls-2" fill-rule="evenodd"/></svg>
@@ -227,7 +593,7 @@ to cancel the serving (<em>Ctr + C</em>) and serve the website again.</p>
     
     
       <li class="rrssb-twitter">
-        <a href="https://twitter.com/share?url=https://jmquintana79.github.io/tech/2015/06/27/welcome.html&text=Welcome to { Personal } Jekyll Theme!"
+        <a href="https://twitter.com/share?url=https://jmquintana79.github.io/tech/2015/06/27/welcome.html&text=Welcome to the tutorial of { Personal } Jekyll Theme!"
         class="popup">
           <span class="rrssb-icon"><svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"/></svg></span>
           <span class="rrssb-text">twitter</span>
@@ -249,7 +615,7 @@ to cancel the serving (<em>Ctr + C</em>) and serve the website again.</p>
     
     
       <li class="rrssb-reddit">
-        <a href="https://www.reddit.com/submit?url=https://jmquintana79.github.io/tech/2015/06/27/welcome.html&title=Welcome to { Personal } Jekyll Theme!" target="_blank">
+        <a href="https://www.reddit.com/submit?url=https://jmquintana79.github.io/tech/2015/06/27/welcome.html&title=Welcome to the tutorial of { Personal } Jekyll Theme!" target="_blank">
           <span class="rrssb-icon">
             <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
               <path d="M11.794 15.316c0-1.03-.835-1.895-1.866-1.895-1.03 0-1.893.866-1.893 1.896s.863 1.9 1.9 1.9c1.023-.016 1.865-.916 1.865-1.9zM18.1 13.422c-1.03 0-1.895.864-1.895 1.895 0 1 .9 1.9 1.9 1.865 1.03 0 1.87-.836 1.87-1.865-.006-1.017-.875-1.917-1.875-1.895zM17.527 19.79c-.678.68-1.826 1.007-3.514 1.007h-.03c-1.686 0-2.834-.328-3.51-1.005-.264-.265-.693-.265-.958 0-.264.265-.264.7 0 1 .943.9 2.4 1.4 4.5 1.402.005 0 0 0 0 0 .005 0 0 0 0 0 2.066 0 3.527-.46 4.47-1.402.265-.264.265-.693.002-.958-.267-.334-.688-.334-.988-.043z"
@@ -457,7 +823,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'Welcome to { Personal } Jekyll Theme!', 'https://jmquintana79.github.io/tech/2015/06/27/welcome.html');
+    history.pushState({}, 'Welcome to the tutorial of { Personal } Jekyll Theme!', 'https://jmquintana79.github.io/tech/2015/06/27/welcome.html');
   }
 }
 </script>
