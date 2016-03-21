@@ -7,6 +7,19 @@
 		<atom:link href="https://jmquintana79.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Jekyll Quick Start</title>
+				
+				
+					<description>&lt;h2 id=&quot;host-in-3-minutes&quot;&gt;1. Host in 3 minutes&lt;/h2&gt;
+
+</description>
+				
+				<pubDate>Mon, 21 Mar 2016 00:00:00 +0900</pubDate>
+				<link>https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html</link>
+				<guid isPermaLink="true">https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html</guid>
+			</item>
+		
+			<item>
 				<title>Welcome to the tutorial of { Personal } Jekyll Theme!</title>
 				
 				
