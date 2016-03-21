@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Jekyll Quick Start
 category: tech
-tags: [ 'tutorial', 'jekyll' ]
+tags: [ 'tutorial' ]
 ---
 
 
