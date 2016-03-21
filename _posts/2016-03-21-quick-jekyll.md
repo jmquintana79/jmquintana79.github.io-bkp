@@ -7,18 +7,18 @@ tags: [ 'tutorial' ]
 ---
 
 
-##1. Host in 3 minutes
+## 1. Host in 3 minutes
 
 Host Jekyll project on GitHub is possible setup in only in 3 Minutes. Firstly it is necessary join in GitHub if you are not an account before.
 
 After of this, you can start:
 
-###1. Create a New Repository on GitHub
+### 1. Create a New Repository on GitHub
 
 Go to your <a href="https://github.com" target="\_blank">https://github.com</a>
  and create a new repository named "USERNAME.github.com"
 
-###2. Install Jekyll-Bootstrap on GitHub
+### 2. Install Jekyll-Bootstrap on GitHub
 
 Enter these commands into your terminal in a directory you want your blog to be:
 
@@ -29,7 +29,7 @@ $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
 $ git push origin master
 </code></pre>
 
-###3. Profit
+### 3. Profit
 
 After GitHub has a couple minutes to do your blog will be publicly available at 
 <a href="" target="\_blank">http://USERNAME.github.com</a>.
@@ -71,7 +71,7 @@ $ jekyll serve
 
 Your blog is now available at: <a href="" target="\_blank">http://localhost:4000</a>. In order to stop the server it is only necessary use **(Ctr + C)**. On the other hand, while you are developing or customizing the blog, to update changes is necessary stop and re-start the server.
 
-##3. Create a Post
+## 3. Create a Post
 Create posts easily via rake task:
 
 <pre><code data-trim class="bash">
@@ -82,7 +82,7 @@ The rake task automatically creates a file with properly formatted filename and 
 
 These included post could be Markdown files. This format allow a very easy way to include new content quickly.
 
-##4. Create a Page
+## 4. Create a Page
 Create pages easily via rake task:
 
 <pre><code data-trim class="bash">
@@ -104,7 +104,7 @@ $ rake page name="pages/about"
 
 The rake task automatically creates a page file with properly formatted filename and YAML Front Matter as well as includes the Jekyll Bootstrap "setup" file.
 
-##5. Publish
+## 5. Publish
 After you've added posts or made changes to your theme or other files, simply commit them to your git repo and push the commits up to GitHub.
 
 <pre><code data-trim class="bash">
@@ -115,14 +115,14 @@ $ git push origin master
 
 A GitHub post-commit hook will automatically deploy your changes to your hosted blog. You will receive a success or failure notice for every commit you make to your blog.
 
-##6. Customize
+## 6. Customize
 Jekyll-Bootstrap can be used as-is as a basic blogging platform but also it could be customizing deeply:
 
-####Themes
+#### Themes
 
 Jekyll-Bootstrap supports modular theming. Themes can co-exist and be enabled/disabled on demand. 
 
-####Blog Configuration
+#### Blog Configuration
 
 Jekyll and Jekyll-Bootstrap has a simple but powerful Jekyll Configuration System. You can:
 
@@ -130,7 +130,7 @@ Specify a custom permalink format for blog posts.
 Specify a commenting engine like disqus, intensedebate, livefyre, or custom.
 Specify an analytics engine like google, getclicky, or custom.
 
-####Jekyll Introduction
+#### Jekyll Introduction
 
 I highly recommend reading the <a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html" target="\_blank">Jekyll Introduction</a> if you plan to customize your blog. 
 
