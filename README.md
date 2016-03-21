@@ -131,3 +131,6 @@ Specify an analytics engine like google, getclicky, or custom.
 
 I highly recommend reading the <a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html" target="\_blank">Jekyll Introduction</a> if you plan to customize your blog. 
 
+## Licensing
+
+This work is distributed under the MIT license (LICENSE-JMQuintana.mit) with theme copyright Panos Sakkos from 'PanosSakkos/personal-jekyll-theme'. This one is also distributed under the MIT license (LICENSE-PanosSakkos.mit).
