@@ -1,117 +1,133 @@
-![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg?branch=master)
-[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# JEKYLL QUICK START
 
-# { Personal } Jekyll Theme
+Jekyll Bootstrap is a powerful framework to create easily a static website. On the other hand, GitHub provide a hosting and enviroment to develop and launch this kind of website. 
 
-{ Personal } is a free responsive Jekyll theme, about you :wink:
+Furthermore, in my case I have use a theme developed by  <a href="https://panossakkos.github.io/" target="\_blank">Panos Sakkos</a> to build a more awesome web profile. After of include this theme, I have improved and customized to 
 
-You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
+## 1. Host in 3 minutesbe update to my needs.
 
-## What value does { Personal } add
+Host Jekyll project on GitHub is possible setup in only in 3 Minutes. Firstly it is necessary join in GitHub if you are not an account before.
 
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
-  * Modern and minimal design
-    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
-    * Sweet animations
-    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
-  * Timeline
-    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
-  * White on black text, making the reading experience tireless
-  * Google analytics  
-* Customization and full control of your website and blog through the site config
-* Blogging functionality
-  * Preview of the latest post in the home page
-  * Archive page
-  * Syntax highlighting
-  * Emojis
-  * Gesture navigation in archive and post pages by swiping
-  * #tags
-  * Disqus comments
-  * Bootstrap share buttons
-  * RSS feed
-* Anti-procrastinating 404 page
-* iOS and Android Web App mode
-* Forcing of https protocol
-* Protection from email harvesting
-* Sitemap
-* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
+After of this, you can start:
 
-## { Personal } à la JekyllNow
+### 1. Create a New Repository on GitHub
 
-Want to get { Personal } without messing with jekyll installations and terminal commands?
+Go to your <a href="https://github.com" target="\_blank">https://github.com</a>
+ and create a new repository named "USERNAME.github.com"
 
-  1. Fork the personal-jekyll-theme repository
-  2. Rename the forked repository to yourgithubusername.github.io
-  3. Visit https://yourgithubusername.github.io
-  4. Start modifying the \_config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
+### 2. Install Jekyll-Bootstrap on GitHub
 
-## Documentation
+Enter these commands into your terminal in a directory you want your blog to be:
 
-The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
+<pre><code data-trim class="bash">
+$ git clone https://github.com/plusjade/jekyll-bootstrap.git USERNAME.github.com
+$ cd USERNAME.github.com
+$ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
+$ git push origin master
+</code></pre>
 
-## Screenshots
-### Header
-![Intro](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
-### About
-![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
-### Latest post preview
-![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
-### Timeline
-![Timeline](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/timeline.jpg)
-### Blog Archive
-![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
-### Gesture navigation instructions
-![Instructions](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/swipe.jpg)
-### Post page
-![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
-### \#Tags
-![Tags](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
-### 404
-![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
-### Mobile rendering
-![Web App](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/web-app.jpg)
-### Web App mode
+### 3. Profit
 
-![iOS](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg)
+After GitHub has a couple minutes to do your blog will be publicly available at 
+<a href="" target="\_blank">http://USERNAME.github.com</a>.
 
-![Android](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
+Already have your blog on GitHub?
 
-## How to run locally
+When you have installed, run Jekyll-Bootstrap locally to check:
 
-First you need to install the dependencies:
+<pre><code data-trim class="bash">
+$ git clone https://github.com/plusjade/jekyll-bootstrap.git
+$ cd jekyll-bootstrap
+$ jekyll serve
+</code></pre>
 
-````
-gem install jekyll jekyll-paginate jemoji html-proofer
-````
+See it in action at <a href="" target="\_blank">http://localhost:4000</a>
 
-Then, you can build and serve your website by simply running:
 
-````
-./scripts/serve-production
-````
+## 2. Run Jekyll Locally
+In order to preview your blog locally you'll need to install the Jekyll ruby gem. 
 
-## Wiki
+<pre><code data-trim class="bash">
+sudo apt-get install ruby1.9.3 ruby1.9.1-dev nodejs
+</code></pre>
 
-Don't forget to list your { Personal } blog in the [Blogs using { Personal }](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) wiki page in order to drive some traffic to your website :wink:
+Note gem dependencies will also be installed. You don't have to run a local version but it helps if you want to preview your content before publishing. 
 
-## Integrating bug fixes and features into your old fork
+<pre><code data-trim class="bash">
+$ gem install jekyll
+</code></pre>
 
-Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website?
-Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Integrating-latest-bug-fixes-and-features-into-your-past-fork) out.
+If you run into a problem please consult the original <a href="http://jekyllrb.com/docs/installation/" target="\_blank">Jekyll installation documentation</a>.
 
-## OSS used in { Personal }
+Once the gem is installed you can navigate to your Jekyll-Bootstrap directory. If you've followed the homepage instructions this will be: <a href="" target="\_blank">USERNAME.github.com</a>. Once in the directory you'll run jekyll with server support:
 
-One of the reasons { Personal } is real is the following OSS projects:
+<pre><code data-trim class="bash">
+$ cd USERNAME.github.com 
+$ jekyll serve
+</code></pre>
 
-  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-  2. [hammer.js](https://hammerjs.github.io/)
-  3. [highlightjs](https://highlightjs.org/)
-  4. [RRSSB](https://github.com/kni-labs/rrssb)
-  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
-  6. [typed.js](https://github.com/mattboldt/typed.js/)
+Your blog is now available at: <a href="" target="\_blank">http://localhost:4000</a>. In order to stop the server it is only necessary use **(Ctr + C)**. On the other hand, while you are developing or customizing the blog, to update changes is necessary stop and re-start the server.
 
-## Supporting the repo
+## 3. Create a Post
+Create posts easily via rake task:
 
-Proposals, pull requests and issues are more than welcome, let's make the web a bit more beautiful and secure :wink:
+<pre><code data-trim class="bash">
+$ rake post title="Hello World"
+</code></pre>
 
-In case you want to say thank you by donating Bitcoins to all the contributors, [this](https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi) is our address.
+The rake task automatically creates a file with properly formatted filename and YAML Front Matter. After you have to set your own title while, by default, the date would be set with the current date.
+
+These included post could be Markdown files. This format allow a very easy way to include new content quickly.
+
+## 4. Create a Page
+Create pages easily via rake task:
+
+<pre><code data-trim class="bash">
+$ rake page name="about.md"
+</code></pre>
+
+Create a nested page:
+
+<pre><code data-trim class="bash">
+$ rake page name="pages/about.md"
+</code></pre>
+
+Create a page with a "pretty" path:
+
+<pre><code data-trim class="bash">
+$ rake page name="pages/about"
+# this will create the file: ./pages/about/index.html
+</code></pre>
+
+The rake task automatically creates a page file with properly formatted filename and YAML Front Matter as well as includes the Jekyll Bootstrap "setup" file.
+
+## 5. Publish
+After you've added posts or made changes to your theme or other files, simply commit them to your git repo and push the commits up to GitHub.
+
+<pre><code data-trim class="bash">
+$ git add .
+$ git commit -m "Add new content"
+$ git push origin master
+</code></pre>
+
+A GitHub post-commit hook will automatically deploy your changes to your hosted blog. You will receive a success or failure notice for every commit you make to your blog.
+
+## 6. Customize
+Jekyll-Bootstrap can be used as-is as a basic blogging platform but also it could be customizing deeply:
+
+#### Themes
+
+Jekyll-Bootstrap supports modular theming. Themes can co-exist and be enabled/disabled on demand. In my case, I have used a theme developed by  <a href="https://panossakkos.github.io/" target="\_blank">Panos Sakkos</a>.
+
+#### Blog Configuration
+
+Jekyll and Jekyll-Bootstrap has a simple but powerful Jekyll Configuration System. You can:
+
+Specify a custom permalink format for blog posts.
+Specify a commenting engine like disqus, intensedebate, livefyre, or custom.
+Specify an analytics engine like google, getclicky, or custom.
+
+#### Jekyll Introduction
+
+I highly recommend reading the <a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html" target="\_blank">Jekyll Introduction</a> if you plan to customize your blog. 
+

@@ -120,7 +120,7 @@ Jekyll-Bootstrap can be used as-is as a basic blogging platform but also it coul
 
 #### Themes
 
-Jekyll-Bootstrap supports modular theming. Themes can co-exist and be enabled/disabled on demand. 
+Jekyll-Bootstrap supports modular theming. Themes can co-exist and be enabled/disabled on demand. In my case, I have used a theme developed by  <a href="https://panossakkos.github.io/" target="\_blank">Panos Sakkos</a>.
 
 #### Blog Configuration
 
