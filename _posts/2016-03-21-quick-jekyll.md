@@ -72,6 +72,9 @@ $ jekyll serve
 Your blog is now available at: <a href="" target="\_blank">http://localhost:4000</a>. In order to stop the server it is only necessary use **(Ctr + C)**. On the other hand, while you are developing or customizing the blog, to update changes is necessary stop and re-start the server.
 
 ## 3. Create a Post
+
+In order to create easily  a post, page (next point) or another elements it is possible use <a href="http://octopress.org/docs/blogging/" target="\_blank">rake command</a>. For this, it is required include a <a href="http://octopress.org/" target="\_blank">**Octopress**</a> "Rakefile" file into your website folder. This file include customizable rules to be launched with *rake tasks*. Any complete example of "Rakefile" file could be download from official <a href="https://github.com/imathis/octopress" target="\_blank">source website</a>.
+
 Create posts easily via rake task:
 
 <pre><code data-trim class="bash">

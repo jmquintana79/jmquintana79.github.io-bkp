@@ -1,9 +1,11 @@
 # Local configuration #
 ######################
 _config.yml
+Rakefile
 
 # OS generated files #
 ######################
+.sass-cache/*
 .DS_Store
 .DS_Store?
 ._*
@@ -11,3 +13,4 @@ _config.yml
 .Trashes
 ehthumbs.db
 Thumbs.db
+
