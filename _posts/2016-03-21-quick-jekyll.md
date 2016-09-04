@@ -6,6 +6,12 @@ category: tech
 tags: [ 'tutorial', 'jekyll' ]
 ---
 
+The user's taste and needs of developers about webpages changes very quickly. Users require awesome websites with a very clear exposition of the information. On the other hand, developers need tools easy to be deployed and specially easy to be filled, customized and updated. Jekyll Bootstrap provides with a very powerfull tool to create awesome websites in a few minutes. 
+
+Jekyll has a plugin system with hooks that allow you to create custom generated content specific to your site. You can run custom code for your site without having to modify the Jekyll source itself.
+
+In my case, my needs were very simple. I only need a easy way to create a very simple homepage to show my skills, include my work into my leisure time and the most important thing, to update the information very quickly, without the necesity of writing very long scripts of for example html to create a beautiful web where display my experiencies. 
+
 
 ## 1. Host in 3 minutes
 
