@@ -7,6 +7,19 @@
 		<atom:link href="https://jmquintana79.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Awesome WM for a nice Linux experience</title>
+				
+				
+					<description>&lt;p&gt;Linux is not only a very convenient enviroment to develop but also is the best way to take adventange of all posibilities provided for a personal computer. An operative system based on Linux allow customize the enviroment and the use of a very complete compedium of tools. On the other hand, Awesome Windows Manager is a level more to get the best experience with your system and your activity with Linux. This one is a dynamic window manager for the X Window System developed in the C and Lua programming languages. Lua is also used for configuring and extending the window manager. Its development began as a fork of dwm. It aims to be extremely small and fast, yet extensively customizable and make it possible for the user to productively manage windows with the use of keyboard. It is another world.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 04 Sep 2016 00:00:00 +0900</pubDate>
+				<link>https://jmquintana79.github.io/tech/2016/09/04/a-enviroment-to-develop-with-a-linux-os-and-awesome-wm.html</link>
+				<guid isPermaLink="true">https://jmquintana79.github.io/tech/2016/09/04/a-enviroment-to-develop-with-a-linux-os-and-awesome-wm.html</guid>
+			</item>
+		
+			<item>
 				<title>Jekyll Quick Start</title>
 				
 				
