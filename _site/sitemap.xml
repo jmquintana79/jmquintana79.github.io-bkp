@@ -13,7 +13,7 @@
   
     
       <url>
-        <loc>https://jmquintana79.github.io/blog/</loc>
+        <loc>http://0.0.0.0:8080/blog/</loc>
         
           
           
@@ -26,7 +26,7 @@
   
     
       <url>
-        <loc>https://jmquintana79.github.io/</loc>
+        <loc>http://0.0.0.0:8080/</loc>
         
           
           
@@ -53,36 +53,36 @@
   
   
     <url>
-      <loc>https://jmquintana79.github.io/tech/2017/04/01/datamining-metodology.html</loc>
+      <loc>http://0.0.0.0:8080/tech/2017/04/01/datamining-metodology.html</loc>
       
-        <lastmod>2017-04-01T00:00:00+09:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>https://jmquintana79.github.io/tech/2016/09/04/a-enviroment-to-develop-with-a-linux-os-and-awesome-wm.html</loc>
-      
-        <lastmod>2016-09-04T00:00:00+09:00</lastmod>
+        <lastmod>2017-04-01T00:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
   
     <url>
-      <loc>https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html</loc>
+      <loc>http://0.0.0.0:8080/tech/2016/09/04/a-enviroment-to-develop-with-a-linux-os-and-awesome-wm.html</loc>
       
-        <lastmod>2016-03-21T00:00:00+09:00</lastmod>
+        <lastmod>2016-09-04T00:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
   
     <url>
-      <loc>https://jmquintana79.github.io/tech/2016/03/15/welcome.html</loc>
+      <loc>http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html</loc>
       
-        <lastmod>2016-03-15T00:00:00+09:00</lastmod>
+        <lastmod>2016-03-21T00:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://0.0.0.0:8080/tech/2016/03/15/welcome.html</loc>
+      
+        <lastmod>2016-03-15T00:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>

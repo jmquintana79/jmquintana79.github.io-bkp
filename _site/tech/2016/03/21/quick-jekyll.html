@@ -199,18 +199,18 @@
 
 <p>In my case, my needs were very simple. I only need a easy way to create a very simple homepage to show my skills, include my work into my leisure time and the most important thing, to update the information very quickly, without the necesity of writing very long scripts of for example html to create a beautiful web where display my experiencies. Furthermore I have found very instering the possibility to include shortcodes into GitHub Gists in order to be used while I am developing. Now, It is not necessary that I remember too much command and statements. Now I can counsult in my personal library of small codes.</p>
 
-<h2 id="host-in-3-minutes">1. Host in 3 minutes</h2>
+<h2 id="1-host-in-3-minutes">1. Host in 3 minutes</h2>
 
 <p>Host Jekyll project on GitHub is possible setup in only in 3 Minutes. Firstly it is necessary join in GitHub if you are not an account before.</p>
 
 <p>After of this, you can start:</p>
 
-<h3 id="create-a-new-repository-on-github">1. Create a New Repository on GitHub</h3>
+<h3 id="1-create-a-new-repository-on-github">1. Create a New Repository on GitHub</h3>
 
 <p>Go to your <a href="https://github.com" target="\_blank">https://github.com</a>
  and create a new repository named “USERNAME.github.com”</p>
 
-<h3 id="install-jekyll-bootstrap-on-github">2. Install Jekyll-Bootstrap on GitHub</h3>
+<h3 id="2-install-jekyll-bootstrap-on-github">2. Install Jekyll-Bootstrap on GitHub</h3>
 
 <p>Enter these commands into your terminal in a directory you want your blog to be:</p>
 
@@ -221,7 +221,7 @@ $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
 $ git push origin master
 </code></pre>
 
-<h3 id="profit">3. Profit</h3>
+<h3 id="3-profit">3. Profit</h3>
 
 <p>After GitHub has a couple minutes to do your blog will be publicly available at 
 <a href="" target="\_blank">http://USERNAME.github.com</a>.</p>
@@ -238,7 +238,7 @@ $ jekyll serve
 
 <p>See it in action at <a href="" target="\_blank">http://localhost:4000</a></p>
 
-<h2 id="run-jekyll-locally">2. Run Jekyll Locally</h2>
+<h2 id="2-run-jekyll-locally">2. Run Jekyll Locally</h2>
 <p>In order to preview your blog locally you’ll need to install the Jekyll ruby gem.</p>
 
 <pre><code data-trim="" class="bash">
@@ -262,7 +262,7 @@ $ jekyll serve
 
 <p>Your blog is now available at: <a href="" target="\_blank">http://localhost:4000</a>. In order to stop the server it is only necessary use <strong>(Ctr + C)</strong>. On the other hand, while you are developing or customizing the blog, to update changes is necessary stop and re-start the server.</p>
 
-<h2 id="create-a-post">3. Create a Post</h2>
+<h2 id="3-create-a-post">3. Create a Post</h2>
 
 <p>In order to create easily  a post, page (next point) or another elements it is possible use <a href="http://octopress.org/docs/blogging/" target="\_blank">rake command</a>. For this, it is required include a <a href="http://octopress.org/" target="\_blank"><strong>Octopress</strong></a> “Rakefile” file into your website folder. This file include customizable rules to be launched with <em>rake tasks</em>. Any complete example of “Rakefile” file could be download from official <a href="https://github.com/imathis/octopress" target="\_blank">source website</a>.</p>
 
@@ -276,7 +276,7 @@ $ rake post title="Hello World"
 
 <p>These included post could be Markdown files. This format allow a very easy way to include new content quickly.</p>
 
-<h2 id="create-a-page">4. Create a Page</h2>
+<h2 id="4-create-a-page">4. Create a Page</h2>
 <p>Create pages easily via rake task:</p>
 
 <pre><code data-trim="" class="bash">
@@ -298,7 +298,7 @@ $ rake page name="pages/about"
 
 <p>The rake task automatically creates a page file with properly formatted filename and YAML Front Matter as well as includes the Jekyll Bootstrap “setup” file.</p>
 
-<h2 id="publish">5. Publish</h2>
+<h2 id="5-publish">5. Publish</h2>
 <p>After you’ve added posts or made changes to your theme or other files, simply commit them to your git repo and push the commits up to GitHub.</p>
 
 <pre><code data-trim="" class="bash">
@@ -309,7 +309,7 @@ $ git push origin master
 
 <p>A GitHub post-commit hook will automatically deploy your changes to your hosted blog. You will receive a success or failure notice for every commit you make to your blog.</p>
 
-<h2 id="customize">6. Customize</h2>
+<h2 id="6-customize">6. Customize</h2>
 <p>Jekyll-Bootstrap can be used as-is as a basic blogging platform but also it could be customizing deeply:</p>
 
 <h4 id="themes">Themes</h4>
@@ -336,7 +336,7 @@ Specify an analytics engine like google, getclicky, or custom.</p>
   <ul class="rrssb-buttons clearfix">
     
       <li class="rrssb-email">
-        <a href="mailto:?subject=Jekyll Quick Start&body=https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html" data-proofer-ignore>
+        <a href="mailto:?subject=Jekyll Quick Start&body=http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html" data-proofer-ignore>
           <span class="rrssb-icon">
             <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
               <path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"
@@ -349,7 +349,7 @@ Specify an analytics engine like google, getclicky, or custom.</p>
     
     
       <li class="rrssb-facebook">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html&title=Jekyll Quick Start" class="popup">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html&title=Jekyll Quick Start" class="popup">
           <span class="rrssb-icon">
             <svg xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="29" height="29" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
               class="cls-2" fill-rule="evenodd"/></svg>
@@ -360,7 +360,7 @@ Specify an analytics engine like google, getclicky, or custom.</p>
     
     
       <li class="rrssb-twitter">
-        <a href="https://twitter.com/share?url=https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html&text=Jekyll Quick Start"
+        <a href="https://twitter.com/share?url=http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html&text=Jekyll Quick Start"
         class="popup">
           <span class="rrssb-icon"><svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"/></svg></span>
           <span class="rrssb-text">twitter</span>
@@ -369,7 +369,7 @@ Specify an analytics engine like google, getclicky, or custom.</p>
     
     
       <li class="rrssb-linkedin">
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html" class="popup">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html" class="popup">
         <span class="rrssb-icon">
           <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
             <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"
@@ -383,7 +383,7 @@ Specify an analytics engine like google, getclicky, or custom.</p>
     
     
       <li class="rrssb-googleplus">
-        <a href="https://plus.google.com/share?url=https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html" class="popup">
+        <a href="https://plus.google.com/share?url=http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html" class="popup">
           <span class="rrssb-icon">
             <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z"/></svg>
           </span>
@@ -395,7 +395,7 @@ Specify an analytics engine like google, getclicky, or custom.</p>
     
     
       <li class="rrssb-pocket">
-        <a href="https://getpocket.com/save?url=https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html">
+        <a href="https://getpocket.com/save?url=http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html">
           <span class="rrssb-icon">
             <svg width="32" height="28" viewBox="0 0 32 28" xmlns="http://www.w3.org/2000/svg">
               <path d="M28.782.002c2.03.002 3.193 1.12 3.182 3.106-.022 3.57.17 7.16-.158 10.7-1.09 11.773-14.588 18.092-24.6 11.573C2.72 22.458.197 18.313.057 12.937c-.09-3.36-.05-6.72-.026-10.08C.04 1.113 1.212.016 3.02.008 7.347-.006 11.678.004 16.006.002c4.258 0 8.518-.004 12.776 0zM8.65 7.856c-1.262.135-1.99.57-2.357 1.476-.392.965-.115 1.81.606 2.496 2.453 2.334 4.91 4.664 7.398 6.966 1.086 1.003 2.237.99 3.314-.013 2.407-2.23 4.795-4.482 7.17-6.747 1.203-1.148 1.32-2.468.365-3.426-1.01-1.014-2.302-.933-3.558.245-1.596 1.497-3.222 2.965-4.75 4.526-.706.715-1.12.627-1.783-.034-1.597-1.596-3.25-3.138-4.93-4.644-.47-.42-1.123-.647-1.478-.844z"
@@ -542,7 +542,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'Jekyll Quick Start', 'https://jmquintana79.github.io/tech/2016/03/21/quick-jekyll.html');
+    history.pushState({}, 'Jekyll Quick Start', 'http://0.0.0.0:8080/tech/2016/03/21/quick-jekyll.html');
   }
 }
 </script>

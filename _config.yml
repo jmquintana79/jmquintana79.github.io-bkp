@@ -198,7 +198,7 @@ paginate_path: "blog/page:num/"
 sass:
   style: compressed
 
-gems:
+plugins: #gems: # it was deprecated
   - jekyll-paginate
   - jemoji
 #  - jekyll-gist # For new version Jekyll 3.0 in Github is neccesary but in local give a crash

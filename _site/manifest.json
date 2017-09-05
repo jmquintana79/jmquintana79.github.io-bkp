@@ -38,6 +38,6 @@
       "density": 4.0
     }
   ],
-  "start_url": "https://jmquintana79.github.io",
+  "start_url": "http://0.0.0.0:8080",
   "display": "standalone"
 }

@@ -63,7 +63,7 @@ Once the gem is installed you can navigate to your Jekyll-Bootstrap directory. I
 
 <pre><code data-trim class="bash">
 $ cd USERNAME.github.com 
-$ jekyll serve
+$ jekyll server --host $IP --port $PORT
 </code></pre>
 
 Your blog is now available at: <a href="" target="\_blank">http://localhost:4000</a>. In order to stop the server it is only necessary use **(Ctr + C)**. On the other hand, while you are developing or customizing the blog, to update changes is necessary stop and re-start the server.
