@@ -74,7 +74,7 @@ Once the gem is installed you can navigate to your Jekyll-Bootstrap directory. I
 
 <pre><code data-trim class="bash">
 $ cd USERNAME.github.com 
-$ jekyll serve
+$ jekyll serve --host $IP --port $PORT
 </code></pre>
 
 Your blog is now available at: <a href="" target="\_blank">http://localhost:4000</a>. In order to stop the server it is only necessary use **(Ctr + C)**. On the other hand, while you are developing or customizing the blog, to update changes is necessary stop and re-start the server.
@@ -127,7 +127,7 @@ $ git push origin master
 A GitHub post-commit hook will automatically deploy your changes to your hosted blog. You will receive a success or failure notice for every commit you make to your blog.
 
 ## 6. Customize
-Jekyll-Bootstrap can be used as-is as a basic blogging platform but also it could be customizing deeply:
+Jekyll-Bootstrap can be used as a basic blogging platform but also it could be customizing deeply:
 
 #### Themes
 
@@ -137,9 +137,16 @@ Jekyll-Bootstrap supports modular theming. Themes can co-exist and be enabled/di
 
 Jekyll and Jekyll-Bootstrap has a simple but powerful Jekyll Configuration System. You can:
 
-Specify a custom permalink format for blog posts.
-Specify a commenting engine like disqus, intensedebate, livefyre, or custom.
-Specify an analytics engine like google, getclicky, or custom.
+- Specify a custom permalink format for blog posts.
+- Specify a commenting engine like disqus, intensedebate, livefyre, or custom.
+- Specify an analytics engine like google, getclicky, or custom.
+- Install and use available plugins as for example:
+
+<pre><code data-trim class="bash">
+$ gem install jekyll-paginate   
+$ gem install jemoji
+</code></pre>
+
 
 #### Jekyll Introduction
 
