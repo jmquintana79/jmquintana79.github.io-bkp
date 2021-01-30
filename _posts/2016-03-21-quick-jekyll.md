@@ -56,16 +56,10 @@ See it in action at <a href="" target="\_blank">http://localhost:4000</a>
 
 
 ## 2. Run Jekyll Locally
-In order to preview your blog locally you'll need to install the Jekyll ruby gem. 
+In order to preview your blog locally you'll need to install the Jekyll. 
 
 <pre><code data-trim class="bash">
 sudo apt install jekyll
-</code></pre>
-
-Note gem dependencies will also be installed. You don't have to run a local version but it helps if you want to preview your content before publishing. 
-
-<pre><code data-trim class="bash">
-$ gem install jekyll
 </code></pre>
 
 If you run into a problem please consult the original <a href="http://jekyllrb.com/docs/installation/" target="\_blank">Jekyll installation documentation</a>.
