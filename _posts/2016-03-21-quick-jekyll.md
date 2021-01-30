@@ -59,7 +59,7 @@ See it in action at <a href="" target="\_blank">http://localhost:4000</a>
 In order to preview your blog locally you'll need to install the Jekyll ruby gem. 
 
 <pre><code data-trim class="bash">
-sudo apt-get install ruby1.9.3 ruby1.9.1-dev nodejs
+sudo apt install jekyll
 </code></pre>
 
 Note gem dependencies will also be installed. You don't have to run a local version but it helps if you want to preview your content before publishing. 
