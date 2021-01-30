@@ -109,7 +109,7 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/logo-japan.png"
     date: "MAY 2015 - Currently"
-    description: "Analyst and Developer <br><a href='http://n-kishou.com/corp/' target=\'_blank\'>Japan Meteorological Corporation</a> <br>Python, Datamining, Modelling, Analysis <br><small><i>Osaka, Japan</i></small>"
+    description: "Analyst and Developer <br><a href='http://n-kishou.com/corp/' target=\'_blank\'>Japan Meteorological Corporation</a> <small><i>Osaka, Japan</i></small>"
   - image: "/img/timeline/logo-ereda.png"
     date: "OCT 2012 - APR 2015"
     description: "Meteorological Technician & Senior Developer <br><a href='http://www.ereda.com/en/' target=\'_blank\'>EREDA, Renewable Energy Solutions</a> <br>C++, Python, R and Matlab, Data Analysis, Dynamical Forecast, Django Web Application <br><small><i>Madrid, Spain</i></small>"
